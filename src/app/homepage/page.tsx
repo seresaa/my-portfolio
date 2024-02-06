@@ -1,64 +1,93 @@
-import Link from "next/link"
-import Image from "next/image"
+'use client';
+import Navbar from "@/app/component/Navbar";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import Logo from "@/images/cherrylogo.png";
-import { FaGithub } from 'react-icons/fa';
-import MyImage from "@/images/me.jpg"
+import MyImage from "@/images/me.jpg";
+import { FaPeopleRoof } from "react-icons/fa6";
+import { RiUserFollowLine } from "react-icons/ri";
 
+export default function Homepage() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1 } },
+  };
 
-export default function Homepage(){
+  const SeeMyWorks = () => {
     return(
-        <main className="h-screen w-screen bg-semiblack">
-        <nav className="flex sm:items-stretch justify-between">
-            <div className="flex">
-                <Image
-                src={Logo}
-                alt="mylogo"
-                width={200}
-                height={50}
-                priority={true} 
+        <button 
+        type="submit"
+        className="text-[#FFFF] bg-primary right-2 py-2 px-4 rounded-lg text-md mr-6">
+        See my works
+        </button>
+    );
+}
+
+  return (
+    <div className="w-full bg-semiblack">
+            <Navbar />
+            <div className="mt-2">
               
-                />
-            </div>
-            <div className="hidden sm:ml-6 sm:block pr-14">
-                <div className="flex mt-6">
-                    <a href="#" className="hover:bg-gray-700 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
-                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
-                    <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg-grid-cols-2 pb-20 justify-center items-center">
+                    <div className="md:col-span-1 m-10 pl-10 ">
+                      <div className="">
+
                     
+                        <h2 className="text-white text-[20px] col-span-3 ">Hello world, I'm Cherry</h2>
+                        <span className="text-primary text-[40px] font-bold">Front-end</span>
+                        <span className="text-white text-[40px] font-bold"> Developer</span>
+                        <h1 className="text-[40px] font-bold" ></h1>
+                        <h2 className="text-white col-span-3 mb-10">
+                          I'm a CS student with a passion for web and mobile development <br></br> and I'm setting my sights on becoming a Front-end developer.</h2>
+                          <SeeMyWorks/>
+                          </div>
+                    </div>
+                    
+                    <div className="md:col-span-1 flex justify-center items-center">
+                      <Image src={MyImage} alt={"MyImage"} className="h-[24rem] w-[25rem] rounded-full"></Image>
+                    </div>
+
                 </div>
+                <div className="mt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                        <div className="md:col-span-1 flex justify-center items-center">
+                          <Image src={MyImage} alt={"MyImage"} className="h-[24rem] w-[25rem] rounded-full"></Image>
+                        </div>
+                            <div className="md:col-span-1 ">
+                                <h1 className="font-bold text-primary text-5xl flex justify-center items-center">Why choose us?</h1>
+                                <h3 className="text-1xl p-10 text-[#FFFF]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat sagittis sapien.
+                                 Nullam tincidunt auctor  mauris non molestie. Orci varius natoque penatibus et magnisquis malesuada mauris
+                                 dis parturient montes, nascetur  ridiculus mus. Praesent quis enim odio. Aliquam vitae vehicula eros
+                            
+                                </h3>
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg-grid-cols-2 gap-4">
+                                    <div className="md:col-span-1 flex  justify-center items-center ">
+                                        <div className="h-50 w-[350px] p-4 bg-primary flex rounded-md justify-center items-center">
+                                            <FaPeopleRoof size={50} style={{color: "white"}}/>
+                                            <h2 className="pl-10 font-bold text-[#FFFF] ">100+ Staff and employee</h2>
+                                        
+                                        </div>
+
+                                    </div>
+                                    <div className="md:col-span-1 flex justify-center items-center ">
+                                        <div className="h-50 w-[350px] p-4 bg-primary flex rounded-md justify-center items-center">
+                                            <RiUserFollowLine size={50} style={{color: "white"}}/>
+                                            <h2 className="pl-10 font-bold text-[#FFFF] ">10k Subscriber</h2>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+
+                    </div>
+
+                </div>
+
+               
             </div>
-
-            <button className="text-primary pr-10">
-                <FaGithub style={{ fontSize: '40px' }} />
-            </button>
-        </nav>
-
-        <div className="h-[500px] w-full flex justify-center items-center">
-            <div className="grid grid-cols-2">
-                <h2 className="text-white text-[20px] col-span-3">Hello world, I'm Cherry</h2>
-                <h1 className="text-[40px] font-bold">
-                <span className="text-primary">Flutter</span>
-                <span className="text-white"> Developer</span>
-                </h1>
-                <h2 className="text-white col-span-3">I'm a  CS student  with a passion for mobile app
-                development <br></br> and I'm setting my sights on becoming a Flutter developer.</h2>
-                <button type="button" className="mt-6 py-[10px] w-40 bg-primary hover:bg-primary-700 text-white font-bold rounded">
-                    See my works
-                </button>
-                
-            </div>
-            <div className="relative inset-0 flex">
-                <Image src={MyImage} alt={"MyImage"} className="h-[24rem] w-[25rem] rounded-full"></Image>
-            </div>
-
-
+          
         </div>
-
-
-
-       
-
-       </main>
-    )
+  );
 }
