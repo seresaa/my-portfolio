@@ -5,7 +5,7 @@ import MyImage from "../images/landingImg.png";
 import MySocials from "../app/components/mySocials";
 
 const ContactMe = () => {
-  const emailAddress = 'cherry.mae.cantones.0813@gmail.com';
+  const emailAddress = "cherry.mae.cantones.0813@gmail.com";
 
   return (
     <a href={`mailto:${emailAddress}`}>
@@ -26,12 +26,12 @@ export default function Homepage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg-grid-cols-2 items-center">
           <motion.div className="md:col-span-1 flex items-center" variants={containerVariants}>
             <div className="m-6">
-              <h2 className="text-white text-[20px] col-span-3 ">Hello world, I'm Cherry</h2>
+              <h2 className="text-white text-[20px] col-span-3 ">Hello world, I mm Cherry</h2>
               <span className="text-primary text-[40px] font-bold">Front-end</span>
               <span className="text-white text-[40px] font-bold"> Developer</span>
               <h1 className="text-[40px] font-bold"></h1>
               <h2 className="text-white col-span-3 mb-10">
-                I'm a Computer Science student with a passion for web and mobile development <br></br> and I'm setting my sights on becoming a Front-end developer.
+                I am a Computer Science student with a passion for web and mobile development <br></br> and I am setting my sights on becoming a Front-end developer.
               </h2>
               <ContactMe/>
            
