@@ -1,11 +1,7 @@
 'use client';
-import Navbar from "../app/components/Navbar";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Logo from "@/images/cherrylogo.png";
-import MyImage from "@/images/me.jpg";
-import { FaPeopleRoof } from "react-icons/fa6";
-import { RiUserFollowLine } from "react-icons/ri";
+import MyImage from "../images/landingImg.png";
 import MySocials from "../app/components/mySocials";
 
 const ContactMe = () => {

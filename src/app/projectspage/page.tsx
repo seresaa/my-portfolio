@@ -1,10 +1,8 @@
 'use client';
-import Link from "next/link";
-import Image from "next/image"
+
 import Proj1 from '@/images/proj1.png'
-import Proj2 from '@/images/proj2.png'
+import Proj2 from '@/images/Proj2.png'
 import Proj3 from '@/images/proj3.png'
-import { FaExternalLinkAlt } from 'react-icons/fa';
 import Project from "../components/project";
 
 
