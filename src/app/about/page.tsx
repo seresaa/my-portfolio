@@ -1,8 +1,6 @@
 'use client';
 import Image from "next/image";
 import MyImage from "@/images/me4.jpg";
-import { FaPeopleRoof } from "react-icons/fa6";
-import { RiUserFollowLine } from "react-icons/ri";
 import TabButton from "../components/tabButton";
 import React, { useTransition, useState } from "react";
 
