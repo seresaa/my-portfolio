@@ -24,7 +24,7 @@ export default function ProjectsPage() {
             <Project 
             projectImg={Proj2}
             title={"Movie App"}
-            description={"Movie App using Flutter with API Integration. (TMDB API) "}
+            description={"Movie App using Flutter with API Integration.(TMDB API) "}
             frameworks={"Flutter"}
             />
 
