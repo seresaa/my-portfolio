@@ -26,7 +26,7 @@ export default function Homepage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg-grid-cols-2 items-center">
           <motion.div className="md:col-span-1 flex items-center" variants={containerVariants}>
             <div className="m-6">
-              <h2 className="text-white text-[20px] col-span-3 ">Hello world, I mm Cherry</h2>
+              <h2 className="text-white text-[20px] col-span-3 ">Hello world, I'm Cherry</h2>
               <span className="text-primary text-[40px] font-bold">Front-end</span>
               <span className="text-white text-[40px] font-bold"> Developer</span>
               <h1 className="text-[40px] font-bold"></h1>

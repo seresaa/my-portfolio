@@ -10,9 +10,9 @@ import { MdOutlineMenu } from "react-icons/md";
 import MenuOverlay from "./MenuOverlay";
 import NavLink from "./navlink";
 
-interface NavBarProps {}
 
-export default function Navbar({}: NavBarProps) {
+
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const navLinks = [
