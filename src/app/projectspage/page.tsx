@@ -35,8 +35,6 @@ export default function ProjectsPage() {
             frameworks={"React js, TailwindCSS"}
             />
 
-
-
         </div>
 
         
