@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
-import { FaGithub } from 'react-icons/fa';
-import Link from 'next/link';
+import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { TbCherryFilled } from "react-icons/tb";
@@ -61,7 +61,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="text-primary mt-4 hidden md:block lg:block pr-6"
         >
-          <FaGithub style={{ fontSize: '30px' }} />
+          <FaGithub style={{ fontSize: "30px" }} />
         </a>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}

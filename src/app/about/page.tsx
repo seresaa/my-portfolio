@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Image from "next/image";
 import MyImage from "@/images/me4.jpg";
 import TabButton from "../components/tabButton";
