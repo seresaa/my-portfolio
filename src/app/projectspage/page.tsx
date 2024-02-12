@@ -2,6 +2,7 @@
 import Proj1 from "@/images/proj1.png"
 import Proj2 from "@/images/Proj2.png"
 import Proj3 from "@/images/proj3.png"
+import Proj4 from "@/images/Proj4.png"
 import Project from "../components/project";
 
 
@@ -33,6 +34,13 @@ export default function ProjectsPage() {
             title={"Recipe App"}
             description={"Recipe web app using React JS with API Integration using TheMealDB API "}
             frameworks={"React js, TailwindCSS"}
+            />
+
+          <Project 
+            projectImg={Proj4}
+            title={"Pet Care Website Design"}
+            description={"Pet care website design with reusable components "}
+            frameworks={"Vite + React, TailwindCSS"}
             />
 
         </div>
