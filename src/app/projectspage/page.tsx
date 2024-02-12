@@ -24,14 +24,14 @@ export default function ProjectsPage() {
             <Project 
             projectImg={Proj2}
             title={"Movie App"}
-            description={"Movie App using Flutter with API Integration.(TMDB API) "}
+            description={"Movie App using Flutter with API Integration using TMDB API "}
             frameworks={"Flutter"}
             />
 
           <Project 
             projectImg={Proj3}
             title={"Recipe App"}
-            description={"Recipe web app using React JS with API Integration.(TheMealDB API) "}
+            description={"Recipe web app using React JS with API Integration using TheMealDB API "}
             frameworks={"React js, TailwindCSS"}
             />
 
