@@ -17,6 +17,8 @@ const TAB_DATA = [
           <li>Next JS</li>
           <li>Typescript</li>
           <li>Flutter</li>
+          <li>Version Control/Git</li>
+          <li>UI/UX Figma</li>
         </ul>
       ),
     },
@@ -26,7 +28,8 @@ const TAB_DATA = [
       content: (
         <ul className="list-disc pl-2 text-white">
           <li>University of Makati, BSCS major in Application Development</li>
-          <li>University of Makati, ICT </li>
+          <li>University of Makati, Diploma in Application Development</li>
+          <li>University of Makati, Senior High School ICT</li>
         </ul>
       ),
     },

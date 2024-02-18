@@ -6,12 +6,13 @@ interface ProjectProps{
     title: string;
     description: string;
     frameworks: string;
+    repoLink: string;
 }
 
-const Project: React.FC<ProjectProps> = ({projectImg, title, description, frameworks}) => {
+const Project: React.FC<ProjectProps> = ({projectImg, title, description, frameworks, repoLink}) => {
 
-    const ViewButton = () => (
-        <button className="px-6 py-2 bg-primary rounded-md m-4 text-white"> Visit</button>
+    const RepositoryButton = () => (
+        <button className="px-6 py-2 bg-primary rounded-md m-4 text-white" onClick={() => window.open(repoLink)}> Repository</button>
     )
 
     return (
@@ -23,7 +24,7 @@ const Project: React.FC<ProjectProps> = ({projectImg, title, description, framew
 
                 <div className="flex justify-between ">
                     <h3 className="pt-6 font-bold text-primary">{frameworks}</h3> 
-                    <ViewButton/>
+                    < RepositoryButton/>
                 </div>
                
             </div>

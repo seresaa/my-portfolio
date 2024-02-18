@@ -20,28 +20,24 @@ export default function ProjectsPage() {
             projectImg={Proj1}
             title={"Personal portfolio website"}
             description={"I created this personal website to showcase my current knowledge and skills"}
-            frameworks={"Next JS, TailwindCSS"}
-            />
+            frameworks={"Next JS, TailwindCSS"} repoLink={"https://github.com/seresaa/my-portfolio.git"}            />
             <Project 
             projectImg={Proj2}
             title={"Movie App"}
-            description={"Movie App using Flutter with API Integration using TMDB API "}
-            frameworks={"Flutter"}
-            />
+            description={"Simple Movie App using Flutter with API Integration using TMDB API "}
+            frameworks={"Flutter"} repoLink={"https://github.com/seresaa/movieappflutter.git"}            />
 
           <Project 
             projectImg={Proj3}
             title={"Recipe App"}
             description={"Recipe web app using React JS with API Integration using TheMealDB API "}
-            frameworks={"React js, TailwindCSS"}
-            />
+            frameworks={"React js, TailwindCSS"} repoLink={"https://github.com/seresaa/Recipe_app.git"}            />
 
           <Project 
             projectImg={Proj4}
             title={"Pet Care Website Design"}
             description={"Pet care website design with reusable components "}
-            frameworks={"Vite + React, TailwindCSS"}
-            />
+            frameworks={"Vite + React, TailwindCSS"} repoLink={"https://github.com/seresaa/Pet-Care.git"}            />
 
         </div>
 
