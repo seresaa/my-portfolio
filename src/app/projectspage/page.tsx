@@ -27,7 +27,7 @@ export default function ProjectsPage() {
             projectImg={Proj2}
             title={"MovieMax: Movie Flutter App"}
             description={
-              "Simple Movie App using Flutter using Provider with API Integration (TMDB API)"
+              "Simple Movie App (Flutter) using Provider with API Integration (TMDB API)"
             }
             frameworks={"Flutter"}
             repoLink={"https://github.com/seresaa/moviemax"}
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
             projectImg={Proj3}
             title={"Booklily: Book Flutter App"}
             description={
-              "Simple Book App using Flutter using BLOC with API Integration (Google Books API) "
+              "Simple Book App (Flutter) using BLoC with API Integration (Google Books API) "
             }
             frameworks={"Flutter"}
             repoLink={"https://github.com/seresaa/booklily"}
