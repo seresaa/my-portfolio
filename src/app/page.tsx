@@ -48,7 +48,7 @@ export default function Homepage() {
               </span>
               <h1 className="text-[40px] font-bold"></h1>
               <h2 className="text-white col-span-3 mb-10">
-                I am a Fresh Graduate a degree of BS in Computer Science with a
+                I am a fresh graduate with a degree of BS in Computer Science with a
                 passion for web and mobile development <br></br> and I am
                 setting my sights on becoming a Front-end developer.
               </h2>
